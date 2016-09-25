@@ -16,7 +16,6 @@
   "dependencies": {
     "angular": "^1.5.8",
     "angular-material": "^1.1.1",
-    "md-date-time": "^0.1.0",
-    "angular-material-icons": "^0.7.1"
+    "md-date-time": "^0.1.0"
   }
 }

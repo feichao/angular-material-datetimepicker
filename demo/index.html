@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html ng-app="App">
+<head>
+	<title>Datetime Picker</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="../bower_components/angular-material/angular-material.css">
+	<link rel="stylesheet" type="text/css" href="../bower_components/md-date-time/dist/md-date-time.css">
+	<link rel="stylesheet" type="text/css" href="../bower_components/font-awesome/css/font-awesome.css">
+	<link rel="stylesheet" type="text/css" href="../src/datetimepicker.css">
+	<style type="text/css">
+		body { 
+			margin: 20px 50px;
+		}
+	</style>
+</head>
+<body>
+	<div ng-controller="Controller">
+		<md-datetime-inline init-datatime="configStartDateTime" placeholder="请选择时间" date-changed="dateChange()"></md-datetime-inline>
+		<p>{{ newDate }}</p>
+	</div>
+
+<script type="text/javascript" src="../bower_components/angular/angular.js"></script>
+<script type="text/javascript" src="../bower_components/angular-animate/angular-animate.js"></script>
+<script type="text/javascript" src="../bower_components/angular-aria/angular-aria.js"></script>
+<script type="text/javascript" src="../bower_components/angular-messages/angular-messages.js"></script>
+<script type="text/javascript" src="../bower_components/angular-material/angular-material.js"></script>
+<script type="text/javascript" src="../bower_components/md-date-time/dist/md-date-time.js"></script>
+<script type="text/javascript" src="../src/datetimepicker.js"></script>
+
+<script type="text/javascript">
+	angular.module('App', ['ngMaterial', 'mdDatetimeInline'])
+		.controller('Controller', function($scope) {
+			$scope.configStartDateTime = '2016-09-25 13:40:33';
+
+			$scope.dateChange = function() {
+				$scope.newDate = 'DateChanged: ' + $scope.configStartDateTime;
+			};
+		})
+</script>
+</body>
+</html>

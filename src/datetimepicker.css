@@ -1,0 +1,135 @@
+.datatime-picker-inline {
+  position: relative;
+}
+.datatime-picker-inline md-input-container {
+  cursor: pointer;
+  padding-bottom: 2px;
+}
+.datatime-picker-inline i.fa.inline-icon {
+  color: white;
+  font-size: 1.3rem;
+  line-height: 2.4rem;
+}
+.datatime-picker-inline i.fa.inline-icon + .fa {
+  margin-left: 10px;
+}
+.datatime-picker-inline .datatime-picker-wrap {
+  background: white;
+  box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.3);
+  left: 0;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  top: 38px;
+  transition: all .3s;
+  -webkit-transition: all .3s;
+  -moz-transition: all .3s;
+  -ms-transition: all .3s;
+  -o-transition: all .3s;
+  transform: scale(0, 0);
+  -webkit-transform: scale(0, 0);
+  -moz-transform: scale(0, 0);
+  -ms-transform: scale(0, 0);
+  -o-transform: scale(0, 0);
+  transform-origin: top center;
+  -webkit-transform-origin: top center;
+  -moz-transform-origin: top center;
+  -ms-transform-origin: top center;
+  -o-transform-origin: top center;
+  width: 22.15rem;
+  z-index: 99;
+}
+.datatime-picker-inline .datatime-picker-wrap.show {
+  opacity: 1;
+  transform: scale(1, 1);
+  -webkit-transform: scale(1, 1);
+  -moz-transform: scale(1, 1);
+  -ms-transform: scale(1, 1);
+  -o-transform: scale(1, 1);
+}
+.datatime-picker-inline .datatime-picker-wrap > .show-date, .datatime-picker-inline .datatime-picker-wrap > .show-time {
+  background: transparent;
+  color: #106cc8;
+  cursor: pointer;
+  display: block;
+  padding: 0;
+  position: absolute;
+  text-align: center;
+  transition: all .5s;
+  -webkit-transition: all .5s;
+  -moz-transition: all .5s;
+  -ms-transition: all .5s;
+  -o-transition: all .5s;
+  top: 0;
+  width: 70px;
+  z-index: 1;
+}
+.datatime-picker-inline .datatime-picker-wrap > .show-date:hover, .datatime-picker-inline .datatime-picker-wrap > .show-time:hover {
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 2px;
+}
+.datatime-picker-inline .datatime-picker-wrap > .show-date {
+  left: 0%;
+  opacity: 0;
+  transform: translateX(20rem) scale3d(0, 0, 0);
+  -webkit-transform: translateX(20rem) scale3d(0, 0, 0);
+  -moz-transform: translateX(20rem) scale3d(0, 0, 0);
+  -ms-transform: translateX(20rem) scale3d(0, 0, 0);
+  -o-transform: translateX(20rem) scale3d(0, 0, 0);
+}
+.datatime-picker-inline .datatime-picker-wrap > .show-date.show {
+  opacity: 1;
+  transform: translateX(0) scale3d(1, 1, 1);
+  -webkit-transform: translateX(0) scale3d(1, 1, 1);
+  -moz-transform: translateX(0) scale3d(1, 1, 1);
+  -ms-transform: translateX(0) scale3d(1, 1, 1);
+  -o-transform: translateX(0) scale3d(1, 1, 1);
+}
+.datatime-picker-inline .datatime-picker-wrap > .show-time {
+  left: 100%;
+  opacity: 0;
+  transform: translateX(-20rem) scale3d(0, 0, 0);
+  -webkit-transform: translateX(-20rem) scale3d(0, 0, 0);
+  -moz-transform: translateX(-20rem) scale3d(0, 0, 0);
+  -ms-transform: translateX(-20rem) scale3d(0, 0, 0);
+  -o-transform: translateX(-20rem) scale3d(0, 0, 0);
+}
+.datatime-picker-inline .datatime-picker-wrap > .show-time.show {
+  opacity: 1;
+  transform: translateX(-100%) scale3d(1, 1, 1);
+  -webkit-transform: translateX(-100%) scale3d(1, 1, 1);
+  -moz-transform: translateX(-100%) scale3d(1, 1, 1);
+  -ms-transform: translateX(-100%) scale3d(1, 1, 1);
+  -o-transform: translateX(-100%) scale3d(1, 1, 1);
+}
+.datatime-picker-inline .datatime-picker-wrap > .datatime-picker .slider {
+  transition: all .40s;
+  -webkit-transition: all .40s;
+  -moz-transition: all .40s;
+  -ms-transition: all .40s;
+  -o-transition: all .40s;
+}
+.datatime-picker-inline .datatime-picker-wrap > .datatime-picker.date .slider {
+  transform: translateX(0);
+  -webkit-transform: translateX(0);
+  -moz-transform: translateX(0);
+  -ms-transform: translateX(0);
+  -o-transform: translateX(0);
+}
+.datatime-picker-inline .datatime-picker-wrap > .datatime-picker.time .slider {
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+}
+.datatime-picker-inline .datatime-picker-wrap > .datatime-picker.time-date.full-mode > .control > .full-title {
+  font-size: 1rem;
+  width: 22.2rem;
+}
+.datatime-picker-inline .datatime-picker-wrap > .datatime-picker.time-date > .buttons {
+  box-sizing: border-box;
+  font-size: 1rem;
+  padding: 5px 10px;
+  width: 22.2rem;
+}
